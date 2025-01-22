@@ -1,4 +1,4 @@
-# @halostatue/fish-mise/conf.d/halostatue_fish_mise.fish:v1.0.0
+# @halostatue/fish-mise/conf.d/halostatue_fish_mise.fish:v1.0.1
 
 function _halostatue_fish_mise_setup
     if command --query mise
@@ -38,11 +38,11 @@ function _halostatue_fish_mise_setup
 
     if test "$mise_completions" != 0
         if path is --type file $fish_complete_path/mise.fish
-            if ! command -v usage && ! $mise which usage >/dev/null 2>/dev/null
+            if ! command --query usage && ! $mise which usage >/dev/null 2>/dev/null
                 $mise use -g usage
             end
         else
-            if command -v usage || $mise which usage >/dev/null 2>/dev/null
+            if command --query usage || $mise which usage >/dev/null 2>/dev/null
                 $mise completion fish | source
             end
         end
