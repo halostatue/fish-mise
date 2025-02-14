@@ -1,10 +1,12 @@
 # halostatue/fish-mise
 
+[![Version][version]](https://github.com/halostatue/fish-mise/releases)
+
 A mostly unopinionated [fish shell][fish shell] plugin for [mise][mise].
 
-This plugin is _not required_ with Homebrew mise, because it installs a default
-activation script in `vendor_conf.d`. To prevent conflicts, however, this plugin
-will disable the default activation script.
+This plugin is _not required_ with Homebrew installation of mise, because it
+installs a default activation script in `vendor_conf.d`. To prevent conflicts,
+however, this plugin will disable the default activation script.
 
 In addition to activating mise, possibly with options (described) below, this
 plugin also enables completions. If it finds an existing mise completion, it
@@ -48,7 +50,8 @@ fisher install halostatue/fish-mise@v1
 
 ### System Requirements
 
-- [fish][fish] 3.0+
+- [fish][fish] 3.4+
+- [mise][mise]
 
 ## Functions
 
@@ -61,9 +64,20 @@ example output
 
 ## Licence
 
-[MIT](LICENCE.md)
+[MIT](./LICENCE.md)
+
+## Change Log
+
+[CHANGELOG](./CHANGELOG.md)
+
+## Contributing
+
+- [Contributing](./CONTRIBUTING.md)
+- [Contributors](./CONTRIBUTORS.md)
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
 
 [fish shell]: https://fishshell.com 'friendly interactive shell'
 [fisher]: https://github.com/jorgebucaran/fisher
 [fish]: https://github.com/fish-shell/fish-shell
 [mise]: https://mise.jdx.dev
+[version]: https://img.shields.io/github/tag/halostatue/fish-mise.svg?label=Version

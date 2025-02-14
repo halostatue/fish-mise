@@ -25,7 +25,7 @@ function _halostatue_fish_mise_setup
     end
 
     # Disable the mise auto activation script included with Homebrew mise.
-    set -g MISE_FISH_AUTO_ACTIVATE 0
+    set --global MISE_FISH_AUTO_ACTIVATE 0
 
     set --local mode
 
