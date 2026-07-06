@@ -1,6 +1,7 @@
 # halostatue/fish-mise
 
 [![Version][version]](https://github.com/halostatue/fish-mise/releases)
+[![MIT](https://img.shields.io/badge/licence-MIT-blue?style=for-the-badge "MIT")](https://github.com/halostatue/fish-mise/blob/main/LICENCE.md)
 
 A mostly unopinionated [fish shell][fish shell] plugin for [mise][mise].
 
